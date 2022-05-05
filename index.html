@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen min-w-screen bg-slate-100">
+    <div
+      id="app"
+      class="h-screen w-full flex-col gap-1 flex items-center justify-center"
+    >
+      <form
+        id="form"
+        class="flex flex-col max-w-xs gap-2 bg-slate-300 rounded-md px-3 py-6"
+      >
+        <input
+          type="text"
+          class="input-sentence h-10 rounded-sm py-2 px-3"
+          name="input"
+          placeholder="Sentence Here"
+        />
+        <input
+          type="text"
+          class="filter h-10 rounded-sm py-2 px-3"
+          placeholder="word to highlight"
+        />
+        <button
+          type="submit"
+          class="bg-black rounded-sm text-white font-bold w-fit px-4 py-2 self-center mt-2"
+        >
+          Highlight
+        </button>
+      </form>
+      <div class="output border-2 font-bold mt-2 border-green-500 min-w-xs p-4">
+        Output Goes Here
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
